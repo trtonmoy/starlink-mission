@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starlink Mission</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./st mission.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      async function copyToClipboard() {
+        var text = document.getElementById("contract-address");
+
+        text.select();
+        text.setSelectionRange(0, 99999); // For mobile devices
+
+        await navigator.clipboard.writeText(text.placeholder);
+
+        alert("Copied the text: " + text.placeholder);
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="stars" class=""></div>
+    <div id="stars2" class="stars_left"></div>
+    <div id="stars3" class="stars_left"></div>
+    <div id="stars4" class="stars_left"></div>
+    <div id="stars5" class="stars_left"></div>
+    <div class="objects">
+      <img class="object_rocket" src="rocket.svg" width="40px" />
+      <div class="earth-moon">
+        <img class="object_earth" src="earth.svg" width="100px" />
+        <img class="object_moon" src="moon.svg" width="80px" />
+        <img class="object_saturn" src="saturn-svgrepo-com.svg" width="100px" />
+      </div>
+      <div class="box_astronaut">
+        <img class="object_astronaut" src="astronaut.svg" width="140px" />
+      </div>
+    </div>
+    <!-- Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Starlink Mission</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#roadmap">Roadmap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tokenomics">Tokenomics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners">Partners</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Landing Section -->
+    <section id="landing" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="bg_move">
+                  <h1 style="color: white">Join AlienPepe</h1>
+                </div>
+              </div>
+              <div class="col-md-12 light-text text-center py-5">
+                <p style="color: white" class="p-project-description">
+                  $Starlink stands out with a unique combination of cutting-edge
+                  technology and alignment with Elon Musk's innovative vision.
+                  With a focus on sustainability, space exploration, or any
+                  other compelling theme, we offer more than just a digital
+                  asset – we provide an opportunity to be part of a
+                  groundbreaking movement. Backed by robust technology,
+                  community engagement, and potential endorsements, $Starlink
+                  aims to redefine the future. Join us on this exciting journey
+                  towards innovation and financial growth.
+                </p>
+              </div>
+              <div class="col-md-4 justify-content-center d-flex py-3">
+                <a
+                  target="_blank"
+                  href="chartlink"
+                  class="newButton p-4 text-white text-decoration-none text-center"
+                  >CHART</a
+                >
+              </div>
+              <div class="col-md-4 d-flex justify-content-center py-3">
+                <a
+                  target="_blank"
+                  href="buylink"
+                  class="newButton p-4 text-white text-decoration-none text-center"
+                  >BUY NOW</a
+                >
+              </div>
+              <div class="col-md-4 d-flex justify-content-center py-3">
+                <a
+                  target="_blank"
+                  href="dexcreener"
+                  class="newButton p-4 text-white text-decoration-none text-center"
+                  >Dexcreener</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 mb-4 d-flex justify-content-center">
+            <img src="AlienPepe.png" id="landing_image" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Second Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-4 col-sm-12 mb-4 d-flex justify-content-center light-text"
+          >
+            <ul class="social">
+              <li>
+                <a href="tglink"
+                  ><img src="telegram.png" style="width: 140%"
+                /></a>
+              </li>
+              <li>
+                <a href="twitterlink"><img src="twitter.png" /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-8 col-sm-12 mb-4 d-flex justify-content-center">
+            <input
+              type="text"
+              id="contract-address"
+              class="form-control contract-address-input"
+              placeholder="0x000000000000000000000000000"
+              readonly=""
+              onclick="copyToClipboard()"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-5">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="bg_move">
+              <h1 style="color: white">Roadmap</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="card">
+              <div>Phase 1</div>
+              <div class="roadmap_ul_upper_div">
+                <ul>
+                  <li>Idea of Starlink Mission</li>
+                  <li>Worldwide marketing</li>
+                  <li>Fairlaunch</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="card">
+              <div>Phase 2</div>
+              <div class="roadmap_ul_upper_div">
+                <ul>
+                  <li>Staking</li>
+                  <li>Partnerships</li>
+                  <li>CMC and CG Listing</li>
+                  <li>Cross-Chain</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="card">
+              <div>Phase 3</div>
+              <div class="roadmap_ul_upper_div">
+                <ul>
+                  <li>Website update</li>
+                  <li>Top 40 CEX Listing</li>
+                  <li>Top 20 CEX Listing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <div class="card">
+              <div>Phase 4</div>
+              <div class="roadmap_ul_upper_div">
+                <ul>
+                  <li>$STARLINK NFTs</li>
+                  <li>NFT Whitelist</li>
+                  <li>NFT Marketplace</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="bg_move">
+              <h1 style="color: white">Tokenomics</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 d-flex justify-content-center">
+            <img src="./startlink.jpg" alt="" />
+          </div>
+          <div class="col-md-6 col-sm-12 mt-4">
+            <div class="">
+              <table class="table table-dark">
+                <tbody>
+                  <tr>
+                    <td class="p-3">Name</td>
+                    <td class="p-3">Starlink Mission</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">Symbol</td>
+                    <td class="p-3">$STARLINK</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">Total Supply</td>
+                    <td class="p-3">100,000,000,000</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">LP</td>
+                    <td class="p-3">Burnt</td>
+                  </tr>
+                  <tr>
+                    <td class="p-3">Tax</td>
+                    <td class="p-3">1 / 1 (Buy and Sell)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="py-5">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="bg_move">
+              <h1 style="color: white">Powered By</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="./partners/etherscan-logo.svg" alt="BSC" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/pinksale.png" alt="pinksale" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/dexview.png" alt="dexview" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/coinsult.png" alt="coinsult" height="60" />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/cmc.png" alt="cmc" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/dextools.png" alt="dextools" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="partners/ave.png" alt="avedex" height="60" />
+          </div>
+          <div class="col-md-3 col-sm-6 mb-4 d-flex justify-content-center">
+            <img src="./partners/uniswap.png" alt="pancakeswap" height="60" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3">
+      <div class="container justify-content-center light-text text-center">
+        <p>&copy; 2023 Starlink Mission. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.0/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        if (window.scrollY > 0) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var animTime = 300,
+          clickPolice = false;
+
+        $(document).on("touchstart click", ".acc-btn", function () {
+          if (!clickPolice) {
+            clickPolice = true;
+
+            var currIndex = $(this).index(".acc-btn"),
+              targetHeight = $(".acc-content-inner")
+                .eq(currIndex)
+                .outerHeight();
+
+            $(".acc-btn h1").removeClass("selected");
+            $(this).find("h1").addClass("selected");
+
+            $(".acc-content").stop().animate({ height: 0 }, animTime);
+            $(".acc-content")
+              .eq(currIndex)
+              .stop()
+              .animate({ height: targetHeight }, animTime);
+
+            setTimeout(function () {
+              clickPolice = false;
+            }, animTime);
+          }
+        });
+      });
+    </script>
+    <script>
+      var ctx = document.getElementById("myChart").getContext("2d");
+      var myChart = new Chart(ctx, {
+        type: "doughnut",
+        data: {
+          labels: ["Presale", "Liquidity", "Initial Burn", "Staking Pool"],
+          datasets: [
+            {
+              data: [35, 17, 46, 2],
+              hoverOffset: 15,
+              backgroundColor: [
+                "#F3AC16",
+                "#FF3355",
+                "#9F9F9F",
+                "#55EE22",
+                "#354D73",
+                "#666633",
+                "#553FCF",
+              ],
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          rotation: 90,
+          circumference: 180,
+          layout: {
+            padding: {
+              left: 15,
+              right: 15,
+              bottom: 100,
+            },
+          },
+          plugins: {
+            legend: {
+              position: "top",
+              labels: {
+                color: "#fff",
+              },
+            },
+            tooltip: {
+              enabled: false,
+            },
+            datalabels: {
+              formatter: (value, ctx) => {
+                let sum = 0;
+                let dataArr = ctx.chart.data.datasets[0].data;
+                dataArr.map((data) => {
+                  sum += Number(data);
+                });
+
+                let percentage = ((value * 100) / sum).toFixed(2) + "%";
+                return percentage;
+              },
+              color: "#fff",
+            },
+          },
+        },
+        plugins: [ChartDataLabels],
+      });
+    </script>
+  </body>
+</html>
